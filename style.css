@@ -6,26 +6,33 @@ html {
   font-size: 16px;
 }
 body {
-  background: #fff;
-  color: #fff;
+  background: linear-gradient(120deg, #fff 0%, #84bdff 100%);
+  color: rgb(78, 78, 78);
   font-family: Montserrat;
   padding: 3rem;
 }
 
 .main-container {
+  position: relative;
   max-width: 1400px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(9, 331px);
+  grid-template-rows: repeat(7, 331px);
   grid-gap: 30px;
+  background: rgb(255, 255, 255, 0.2);
+
+  border-radius: 30px;
+  padding: 1rem;
 }
 
 .profile-main {
   grid-column: 1 / span 3;
   grid-row: 1 / span 1;
   display: flex;
-  background-color: #6b6e70;
+  background-color: rgb(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgb(133, 133, 133);
+  backdrop-filter: blur(5px);
   padding: 2rem;
   border-radius: 14px;
 }
@@ -33,6 +40,7 @@ body {
 .profile-image img {
   width: 280px;
   border-radius: 24px;
+  z-index: 4;
 }
 
 .profile-texts {
@@ -73,7 +81,8 @@ body {
 .skills-container {
   grid-column: 1 / span 1;
   grid-row: 2 / span 1;
-  background-color: #6b6e70;
+  background-color: rgb(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgb(133, 133, 133);
   border-radius: 14px;
   padding: 1rem;
   height: fit-content;
@@ -102,17 +111,40 @@ body {
 }
 
 .projects-bar {
-  background-color: #6b6e70;
+  background-color: rgb(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgb(133, 133, 133);
   padding: 1rem;
   border-radius: 8px;
+  display: grid;
+}
+
+.language {
+  display: flex;
+}
+.l {
+  padding: 0.8rem 1rem;
+  box-shadow: 0 0 5px rgb(133, 133, 133);
+  color: #333;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+.l:hover {
+  background-color: rgb(38, 65, 189);
+  color: #fff;
+}
+
+.l:active {
+  background-color: rgb(53, 90, 255);
 }
 
 .project {
   display: flex;
   flex-wrap: nowrap;
   width: 100%;
-  margin-top: 3rem;
-  background-color: #6b6e70;
+  margin-top: 2rem;
+  background-color: rgb(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgb(133, 133, 133);
   padding: 1.5rem;
   border-radius: 16px;
 }
@@ -131,10 +163,33 @@ body {
   border-radius: 12px;
 }
 
+.proj-buttons {
+  display: flex;
+}
+
+.btn {
+  margin-right: 1rem;
+  padding: 0.8rem 1rem;
+  background-color: rgb(38, 65, 189);
+  box-shadow: 0 0 5px rgb(133, 133, 133);
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: rgb(27, 45, 129);
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: rgb(38, 65, 189);
+}
+
 .experience-container {
   grid-column: 1 / span 1;
   grid-row: 3 / span 1;
-  background-color: #6b6e70;
+  background-color: rgb(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgb(133, 133, 133);
   padding: 1rem;
   border-radius: 14px;
   height: fit-content;
@@ -152,7 +207,8 @@ body {
 .exp {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
+  margin-bottom: 1.4rem;
 }
 
 .exp-text {
@@ -168,7 +224,8 @@ body {
 .education-cert {
   grid-column: 1 / span 1;
   grid-row: 4 / span 2;
-  background-color: #6b6e70;
+  background-color: rgb(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgb(133, 133, 133);
   border-radius: 14px;
   padding: 1rem;
   height: fit-content;
@@ -198,7 +255,8 @@ body {
   grid-column: 1 / span 1;
   grid-row: 5 / span 3;
   margin-top: 4rem;
-  background-color: #6b6e70;
+  background-color: rgb(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgb(133, 133, 133);
   padding: 1rem;
   border-radius: 14px;
   height: fit-content;
@@ -209,13 +267,25 @@ body {
 }
 
 .hobby {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .hobby-image img {
   width: 350px;
   height: 200px;
   border-radius: 12px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.hobby-name {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .blog-container {
@@ -224,5 +294,53 @@ body {
 }
 
 .blog {
-  background-color: #6b6e70;
+  margin-top: 2rem;
+  background-color: rgb(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgb(133, 133, 133);
+  border-radius: 16px;
+  display: flex;
+  padding: 2rem 1rem;
+  height: fit-content;
+}
+
+.blog h1 {
+  font-size: 1.4rem;
+}
+
+.blog-image img {
+  width: 480px;
+  border-radius: 18px;
+}
+
+.blog-bar {
+  background-color: rgb(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgb(133, 133, 133);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.blog-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blog-text a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.blog-text a:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  color: rgb(104, 104, 104);
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
 }
