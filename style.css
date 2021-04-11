@@ -383,6 +383,13 @@ body {
 }
 
 @media (max-width: 1000px) {
+  body {
+    padding: 0.1rem;
+  }
+  .main-container {
+    width: 100%;
+  }
+
   .profile-info {
     display: block;
     margin-bottom: 1rem;
@@ -447,7 +454,11 @@ body {
 }
 
 @media screen and (max-width: 650px) {
+  body {
+    padding: 0.1rem;
+  }
   .main-container {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(16, 355px);
@@ -468,6 +479,8 @@ body {
   .profile-image {
     display: flex;
     align-self: center;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   .skills-container {
@@ -491,6 +504,12 @@ body {
     margin-top: 5rem;
   }
 
+  .proj-image {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    margin: 0 auto;
+  }
   .proj-image img {
     width: 370px;
   }
