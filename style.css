@@ -462,7 +462,7 @@ body {
     padding: 0;
   }
   .main-container {
-    width: 100%;
+    width: 95%;
     display: grid;
     grid-template-columns: repeat(auto-fit, 1fr);
     grid-template-rows: repeat(16, 282px);
@@ -532,11 +532,15 @@ body {
 
 @media screen and (max-width: 400px) {
   .profile-image img {
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
   }
 
   .proj-image img {
-    width: 350px;
+    width: 320px;
+  }
+
+  .hobby-image img {
+    width: 320px;
   }
 }
