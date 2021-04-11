@@ -107,7 +107,7 @@ body {
 
 .projects-container {
   grid-column: 2 / span 2;
-  grid-row: 2 / span 4;
+  grid-row: 2 / span 5;
 }
 
 .projects-bar {
@@ -317,6 +317,7 @@ body {
   box-shadow: 0 0 5px rgb(133, 133, 133);
   padding: 1rem;
   border-radius: 8px;
+  font-size: 1rem;
 }
 
 .blog-text {
@@ -343,4 +344,165 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 3rem;
+}
+
+@media (max-width: 1200px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(9, 331px);
+  }
+
+  .blog-container {
+    margin-top: 14rem;
+    grid-column: 2 / span 2;
+    grid-row: 8 / span 4;
+  }
+
+  .blog {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .blog-image img {
+    width: 325px;
+    border-radius: 18px;
+  }
+
+  .project {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2rem;
+    background-color: rgb(255, 255, 255, 0.2);
+    box-shadow: 0 0 5px rgb(133, 133, 133);
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .profile-info {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .blog-container {
+    margin-top: 4.3rem;
+    grid-column: 1 / span 1;
+    grid-row: 5 / span 2;
+    margin-bottom: 20rem;
+  }
+
+  .hobbies {
+    grid-column: 1 / span 1;
+    grid-row: 7 / span 3;
+  }
+
+  .proj-image img {
+    width: 263px;
+  }
+
+  .l {
+    padding: 0.8rem 0.5rem;
+  }
+}
+
+@media (max-width: 850px) {
+  body {
+    padding: 0.7rem;
+  }
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 400px);
+  }
+
+  .profile-main {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+    height: fit-content;
+    margin-bottom: 5rem;
+  }
+
+  .profile-image img {
+    width: 262px;
+  }
+
+  .profile-image {
+    display: flex;
+    align-self: center;
+  }
+
+  .skills-container {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .projects-container {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 5;
+  }
+}
+
+@media (max-width: 650px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(16, 355px);
+    grid-row-gap: 3rem;
+  }
+  .profile-main {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+    height: fit-content;
+    margin-bottom: 5rem;
+    display: grid;
+  }
+
+  .profile-image img {
+    width: 440px;
+  }
+
+  .profile-image {
+    display: flex;
+    align-self: center;
+  }
+
+  .skills-container {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+  }
+
+  .experience-container {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+  }
+
+  .education-cert {
+    grid-column: 1 / span 1;
+    grid-row: 5 / span 2;
+  }
+
+  .projects-container {
+    grid-column: 1 / span 1;
+    grid-row: 6 / span 5;
+    margin-top: 5rem;
+  }
+
+  .proj-image img {
+    width: 400px;
+  }
+
+  .blog-container {
+    grid-column: 1 / span 1;
+    grid-row: 12 / span 2;
+    margin-top: 10rem;
+  }
+
+  .hobbies {
+    grid-column: 1 / span 1;
+    grid-row: 14 / span 2;
+  }
 }
