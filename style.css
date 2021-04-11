@@ -21,6 +21,7 @@ body {
   grid-template-rows: repeat(7, 331px);
   grid-gap: 30px;
   background: rgb(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
 
   border-radius: 30px;
   padding: 1rem;
@@ -32,7 +33,6 @@ body {
   display: flex;
   background-color: rgb(255, 255, 255, 0.2);
   box-shadow: 0 0 5px rgb(133, 133, 133);
-  backdrop-filter: blur(5px);
   padding: 2rem;
   border-radius: 14px;
 }
@@ -464,7 +464,7 @@ body {
   .main-container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(auto-fit, 1fr);
     grid-template-rows: repeat(16, 282px);
     grid-row-gap: 3rem;
   }
@@ -527,5 +527,16 @@ body {
   .hobbies {
     grid-column: 1 / span 1;
     grid-row: 14 / span 2;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .profile-image img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .proj-image img {
+    width: 350px;
   }
 }
