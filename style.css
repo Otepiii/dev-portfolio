@@ -467,13 +467,13 @@ body {
   .profile-main {
     grid-column: 1 / span 1;
     grid-row: 1 / span 2;
-    height: fit-content;
     margin-bottom: 5rem;
     display: grid;
   }
 
   .profile-image img {
     width: 370px;
+    height: 370px;
   }
 
   .profile-image {
