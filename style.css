@@ -454,14 +454,18 @@ body {
 }
 
 @media screen and (max-width: 650px) {
+  html {
+    font-size: 12px;
+  }
+
   body {
-    padding: 0.1rem;
+    padding: 0;
   }
   .main-container {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(16, 355px);
+    grid-template-rows: repeat(16, 282px);
     grid-row-gap: 3rem;
   }
   .profile-main {
