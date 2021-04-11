@@ -409,7 +409,7 @@ body {
   }
 }
 
-@media (max-width: 850px) {
+@media screen and (max-width: 850px) {
   body {
     padding: 0.7rem;
   }
@@ -446,7 +446,7 @@ body {
   }
 }
 
-@media (max-width: 650px) {
+@media screen and (max-width: 650px) {
   .main-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -462,7 +462,7 @@ body {
   }
 
   .profile-image img {
-    width: 440px;
+    width: 370px;
   }
 
   .profile-image {
@@ -492,7 +492,7 @@ body {
   }
 
   .proj-image img {
-    width: 400px;
+    width: 370px;
   }
 
   .blog-container {
